@@ -56,35 +56,16 @@ const Robot = () => {
         const scrollY = window.scrollY
         const amplitude = 8
 
-        if (scrollY < 2500) {
+        if (scrollY < 2000) {
           model.position.x =
-            ((scrollY % 2500) / 2500) * amplitude - amplitude / 2
-        } else if (scrollY >= 2500 && scrollY < 5000) {
+            ((scrollY % 2000) / 2000) * amplitude - amplitude / 2
+        } else if (scrollY >= 2000 && scrollY < 4000) {
           model.position.x =
-            amplitude / 2 - ((scrollY % 2500) / 2500) * amplitude
-        } else if (scrollY >= 5000 && scrollY < 7500) {
+            amplitude / 2 - ((scrollY % 2000) / 2000) * amplitude
+        } else if (scrollY >= 4000 && scrollY < 5400) {
           model.position.x =
-            ((scrollY % 2500) / 2500) * amplitude - amplitude / 2
-        } else if (scrollY >= 7500 && scrollY < 10000) {
-          model.position.x =
-            amplitude / 2 - ((scrollY % 2500) / 2500) * amplitude
-        } else if (scrollY >= 10000 && scrollY < 12500) {
-          model.position.x =
-            ((scrollY % 2500) / 2500) * amplitude - amplitude / 2
-        } else if (scrollY >= 12500 && scrollY < 15000) {
-          model.position.x =
-            amplitude / 2 - ((scrollY % 2500) / 2500) * amplitude
-        } else if (scrollY >= 15000 && scrollY < 17500) {
-          model.position.x =
-            ((scrollY % 2500) / 2500) * amplitude - amplitude / 2
-        } else if (scrollY >= 17500 && scrollY < 20000) {
-          model.position.x =
-            amplitude / 2 - ((scrollY % 2500) / 2500) * amplitude
-        } else if (scrollY >= 20000 && scrollY < 22500) {
-          model.position.x =
-            ((scrollY % 2500) / 2500) * amplitude - amplitude / 2
+            ((scrollY % 2000) / 2000) * amplitude - amplitude / 2
         }
-
         model.rotation.y = scrollY * 0.0031
       }
     }
